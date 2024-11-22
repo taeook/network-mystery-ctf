@@ -5,23 +5,24 @@ Welcome to the CTF Challenge! Your task is to find the hidden flag within this w
 ## How to Play
 
 1. Visit: [https://taeook.github.io/web-exploits-ctf/](https://taeook.github.io/web-exploits-ctf/)
-2. Explore the webpage and its source code to find the hidden flag.
+2. Explore the webpage and its network activity to find the hidden flag.
 3. Enter the flag in the input box and click "Submit" to check if it's correct.
-
-
-There are hints for those who are stuck.
-
 
 ## Hints
 
 <details>
   <summary>Click here to reveal Hint 1</summary>
-  Sometimes, the most valuable information is hidden in plain sight.
+  Pay attention to the network requests made by the page. They might contain more than meets the eye.
 </details>
 
 <details>
   <summary>Click here to reveal Hint 2</summary>
-  Inspecting the source code might reveal secrets that are not visible on the page.
+  Use the Network tab in your browser's developer tools to inspect the requests and responses. Look for any JSON files being fetched.
 </details>
+
+## Tools
+
+- **Browser Developer Tools:** Use these tools to inspect network requests, view source code, and debug JavaScript.
+- **Network Tab:** Specifically, use the Network tab to monitor and analyze HTTP requests made by the webpage.
 
 Good luck and have fun!
