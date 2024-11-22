@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Web Exploits CTF</title>
-   </head>
-   <body>
-       <h1>Welcome to the Web Exploits CTF</h1>
-       <p>Try to find the XSS vulnerability!</p>
-       <form action="index.html" method="GET">
-           <label for="input">Enter your name:</label>
-           <input type="text" id="input" name="name">
-           <button type="submit">Submit</button>
-       </form>
-       <div id="output">
-           <p>Hello, <span id="name"></span>!</p>
-       </div>
-       <script>
-           const urlParams = new URLSearchParams(window.location.search);
-           const name = urlParams.get('name');
-           if (name) {
-               document.getElementById('name').innerHTML = name;
-           }
-       </script>
-   </body>
-   </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF: Unveiling the Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the CTF Challenge: Unveiling the Basics</h1>
+    <p>Explore the web application and find the vulnerabilities to capture the flag!</p>
+
+    <h2>Search Users</h2>
+    <input type="text" id="search" placeholder="Enter username">
+    <button onclick="searchUser()">Search</button>
+    <div id="searchResult"></div>
+
+    <h2>Leave a Comment</h2>
+    <input type="text" id="comment" placeholder="Enter your comment">
+    <button onclick="postComment()">Post Comment</button>
+    <div id="commentsSection"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
