@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Web Exploits CTF</title>
+   </head>
+   <body>
+       <h1>Welcome to the Web Exploits CTF</h1>
+       <p>Try to find the XSS vulnerability!</p>
+       <form action="index.html" method="GET">
+           <label for="input">Enter your name:</label>
+           <input type="text" id="input" name="name">
+           <button type="submit">Submit</button>
+       </form>
+       <div id="output">
+           <p>Hello, <span id="name"></span>!</p>
+       </div>
+       <script>
+           const urlParams = new URLSearchParams(window.location.search);
+           const name = urlParams.get('name');
+           if (name) {
+               document.getElementById('name').innerHTML = name;
+           }
+       </script>
+   </body>
+   </html>
