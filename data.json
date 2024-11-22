@@ -2,6 +2,6 @@
   "data": [
     {"id": 1, "value": "random_data"},
     {"id": 2, "value": "more_random_data"},
-    {"id": 3, "value": "CTF{network_request_flag}"}
+    {"id": 3, "value": "CTF_IT&C_101{network_request_flag}"}
   ]
 }
