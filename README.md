@@ -4,7 +4,7 @@ Welcome to the CTF Challenge! Your task is to find the hidden flag within this w
 
 ## How to Play
 
-1. Visit: [https://taeook.github.io/web-exploits-ctf/](https://taeook.github.io/web-exploits-ctf/)
+1. Visit: [click here](https://taeook.github.io/network-mystery-ctf/)
 2. Explore the webpage and its network activity to find the hidden flag.
 3. Enter the flag in the input box and click "Submit" to check if it's correct.
 
