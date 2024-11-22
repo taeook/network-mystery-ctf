@@ -1,28 +1,37 @@
-# CTF: Unveiling the Basics
+# CTF Challenge
 
-Welcome to the "Unveiling the Basics" CTF challenge! This challenge is designed to introduce you to fundamental web security concepts, specifically focusing on Cross-Site Scripting (XSS) and SQL Injection vulnerabilities.
+Welcome to the CTF Challenge! Your task is to find the hidden flag within this webpage and submit it in the input box provided.
 
 ## How to Play
 
-1. **Search Users**: Try to find users in the system. Can you manipulate the input to reveal hidden information?
-2. **Leave a Comment**: Post a comment and see how it is displayed. Can you execute scripts through the comment section?
+1. Visit: [https://taeook.github.io/web-exploits-ctf/](https://taeook.github.io/web-exploits-ctf/)
+2. Explore the webpage and its source code to find the hidden flag.
+3. Enter the flag in the input box and click "Submit" to check if it's correct.
 
-## Objectives
 
-- Identify and exploit the SQL Injection vulnerability to retrieve the hidden flag.
-- Use XSS techniques to execute scripts within the web page.
+There are hints for those who are stuck.
 
-## Deployment
 
-This CTF challenge is hosted on GitHub Pages. Simply navigate to the GitHub Pages URL to start playing.
 
-## Disclaimer
 
-This challenge is for educational purposes only. Do not attempt to exploit real-world systems without proper authorization.
 
-## Resources
 
-- [OWASP Web Security Basics](https://owasp.org/)
-- [Introductory Tutorials on XSS and SQL Injection](https://www.example.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Hints
+
+1. Sometimes, the most valuable information is hidden in plain sight.
+2. Inspecting the source code might reveal secrets that are not visible on the page.
 
 Good luck and have fun!
