@@ -12,26 +12,16 @@ Welcome to the CTF Challenge! Your task is to find the hidden flag within this w
 There are hints for those who are stuck.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Hints
 
-1. Sometimes, the most valuable information is hidden in plain sight.
-2. Inspecting the source code might reveal secrets that are not visible on the page.
+<details>
+  <summary>Click here to reveal Hint 1</summary>
+  Sometimes, the most valuable information is hidden in plain sight.
+</details>
+
+<details>
+  <summary>Click here to reveal Hint 2</summary>
+  Inspecting the source code might reveal secrets that are not visible on the page.
+</details>
 
 Good luck and have fun!
