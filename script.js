@@ -1,38 +1,17 @@
-// Simulated database
-const users = [
-    { username: 'admin', password: 'admin123', flag: 'FLAG{SQL_INJECTION_SUCCESS}' },
-    { username: 'user1', password: 'password1' },
-    { username: 'user2', password: 'password2' }
-];
+function checkFlag() {
+    const input = document.getElementById('flagInput').value;
+    const result = document.getElementById('result');
+    const correctFlag = 'CTF{IT&C_101_hidden_flag}'; // This is the flag users need to find
 
-const comments = [];
-
-// Simulate SQL Injection vulnerability
-function searchUser() {
-    const searchInput = document.getElementById('search').value;
-    const resultDiv = document.getElementById('searchResult');
-
-    // Simulate a more complex query check
-    const user = users.find(user => searchInput.includes(user.username) && searchInput.includes(user.password));
-
-    if (user) {
-        resultDiv.innerHTML = `User found: ${user.username}`;
-        if (user.flag) {
-            resultDiv.innerHTML += `<br>Flag: ${user.flag}`;
-        }
+    if (input === correctFlag) {
+        result.textContent = 'Congratulations! You found the flag!';
+        result.style.color = 'green';
     } else {
-        resultDiv.innerHTML = 'User not found';
+        result.textContent = 'Incorrect flag. Try again!';
+        result.style.color = 'red';
     }
 }
 
-// Simulate XSS vulnerability
-function postComment() {
-    const commentInput = document.getElementById('comment').value;
-    comments.push(commentInput);
-    displayComments();
-}
-
-function displayComments() {
-    const commentsSection = document.getElementById('commentsSection');
-    commentsSection.innerHTML = comments.map(comment => `<p>${comment}</p>`).join('');
-}
+// Hidden flag logic
+// The flag is hidden in the comments of this script file
+// CTF{IT&C_101_hidden_flag}
