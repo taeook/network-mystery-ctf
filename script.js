@@ -1,7 +1,7 @@
 function checkFlag() {
     const input = document.getElementById('flagInput').value;
     const result = document.getElementById('result');
-    const correctFlag = 'CTF{IT&C_101_hidden_flag}'; // This is the flag users need to find
+    const correctFlag = 'CTF{IT&C_101_hidden_flag}';
 
     if (input === correctFlag) {
         result.textContent = 'Congratulations! You found the flag!';
