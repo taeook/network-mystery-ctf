@@ -12,8 +12,8 @@ function searchUser() {
     const searchInput = document.getElementById('search').value;
     const resultDiv = document.getElementById('searchResult');
 
-    // Vulnerable to SQL Injection-like attack
-    const user = users.find(user => user.username === searchInput);
+    // Simulate a more complex query check
+    const user = users.find(user => searchInput.includes(user.username) && searchInput.includes(user.password));
 
     if (user) {
         resultDiv.innerHTML = `User found: ${user.username}`;
